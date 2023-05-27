@@ -67,10 +67,8 @@ const dateFormated = formatDate(pubDate);
         </article>
       </section>
     </main>
-
-    <div class="component">
-      <!-- <div class="component-content"> -->
-        <!-- 集成cusdis评论系统 -->
+    <!-- 集成cusdis评论系统 -->
+    <div class="component">      
         <div id="cusdis_thread"
         data-host="https://cusdis.com"
         data-app-id="6e32339d-5fc5-468d-ae6b-cbb3d505638e"
@@ -78,10 +76,8 @@ const dateFormated = formatDate(pubDate);
         data-page-url={ Astro.url }
         data-page-title={ title }
       ></div>
-      <!-- <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>               -->
-       <!-- 评论功能结束    -->
-      <!-- </div> -->
-    </div>   
+    </div>
+    <!-- 评论功能结束    -->   
 
     <Footer />
     <script is:inline>
@@ -89,7 +85,7 @@ const dateFormated = formatDate(pubDate);
       script.src = "/static/js/initPost.js";
       document.head.appendChild(script);
     </script>
-    <!-- 评论留言 -->
+    <!-- 查看评论留言 -->
     <script defer src="https://cusdis.loongphy.com/js/widget/lang/zh-cn.js"
     ></script>
     <script async defer src="https://cusdis.loongphy.com/js/cusdis.es.js"
@@ -101,7 +97,5 @@ const dateFormated = formatDate(pubDate);
       src="https://cusdis.loongphy.com/js/cusdis-count.umd.js"
     ></script>
     <!-- 留言功能结束 -->
-
-
   </body>
 </html>
