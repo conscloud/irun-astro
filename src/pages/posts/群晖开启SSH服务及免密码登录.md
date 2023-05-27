@@ -3,7 +3,7 @@ layout: '../../layouts/MarkdownPost.astro'
 title: '群晖开启SSH及免密码登录配置'
 pubDate: 2023-05-27
 description: '群晖使用'
-author: ''
+author: 'ZhJy'
 cover:
     url: 'https://cdn.jsdelivr.net/gh/conscloud/picgotemp/imgplus/202305270954319.png'
     square: 'https://cdn.jsdelivr.net/gh/conscloud/picgotemp/imgplus/202305270954319.png'
