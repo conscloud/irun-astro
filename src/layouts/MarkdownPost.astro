@@ -3,6 +3,7 @@ import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 
+
 import { formatDate } from "../utils";
 import { SITE_LANG} from "../consts";
 const { frontmatter } = Astro.props;
@@ -63,24 +64,44 @@ const dateFormated = formatDate(pubDate);
               </div>
             </div>
           </div>
-
-          <div id="cusdis_thread"
-          data-host="https://cusdis.com"
-          data-app-id="6e32339d-5fc5-468d-ae6b-cbb3d505638e"
-          data-page-id="{{ PAGE_ID }}"
-          data-page-url="{{ PAGE_URL }}"
-          data-page-title="{{ PAGE_TITLE }}"
-        ></div>
-        <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
-
         </article>
       </section>
     </main>
+
+    <div class="component">
+      <!-- <div class="component-content"> -->
+        <!-- 集成cusdis评论系统 -->
+        <div id="cusdis_thread"
+        data-host="https://cusdis.com"
+        data-app-id="6e32339d-5fc5-468d-ae6b-cbb3d505638e"
+        data-page-id={ Astro.url }
+        data-page-url={ Astro.url }
+        data-page-title={ title }
+      ></div>
+      <!-- <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>               -->
+       <!-- 评论功能结束    -->
+      <!-- </div> -->
+    </div>   
+
     <Footer />
     <script is:inline>
       var script = document.createElement("script");
       script.src = "/static/js/initPost.js";
       document.head.appendChild(script);
     </script>
+    <!-- 评论留言 -->
+    <script defer src="https://cusdis.loongphy.com/js/widget/lang/zh-cn.js"
+    ></script>
+    <script async defer src="https://cusdis.loongphy.com/js/cusdis.es.js"
+    ></script>
+    <script
+      defer
+      data-host="https://cusdis.com"
+      data-app-id="6e32339d-5fc5-468d-ae6b-cbb3d505638e"
+      src="https://cusdis.loongphy.com/js/cusdis-count.umd.js"
+    ></script>
+    <!-- 留言功能结束 -->
+
+
   </body>
 </html>
