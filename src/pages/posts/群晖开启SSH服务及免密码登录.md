@@ -8,7 +8,7 @@ cover:
     url: 'https://cdn.jsdelivr.net/gh/conscloud/picgotemp/imgplus/202305270954319.png'
     square: 'https://cdn.jsdelivr.net/gh/conscloud/picgotemp/imgplus/202305270954319.png'
     alt: 'cover'
-tags: ["技术", "群晖", "DSM"] 
+tags: [群晖"] 
 theme: 'light'
 featured: true
 
@@ -18,7 +18,7 @@ meta:
  - name: keywords
    content: key3, key4
 
-keywords: key1, key2, key!
+keywords: 群晖, DSM, SSH!
 ---
 ### 前言
 
