@@ -91,7 +91,7 @@ https://cusdis.loongphy.com/js/cusdis-count.umd.js
 
 4. 评价内容可以在cusdis的控制台进行审核、回复、删除等操作。
 
-![alt 评论审核|inline](https://cdn.jsdelivr.net/gh/conscloud/picgotemp/imgplus/202305271746762.png)
+![评论审核|inline](https://cdn.jsdelivr.net/gh/conscloud/picgotemp/imgplus/202305271746762.png)
 
 5. 在控制台审核通过后，可以在文章后面查看评论记录。
 
