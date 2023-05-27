@@ -115,23 +115,23 @@ sensor:
 
 ### 二、通过mqtt推送
 
-1、先在openwrt中安装好mqtt，`mosquitto-client-nosll、libmosquitto-nossl`这两个包
+1、先在openwrt中安装好mqtt，`mosquitto-client-nosll、libmosquitto-nossl`这两个包。
 
 ```shell
 opkg update
 opkg install mosquitto-client-nossl libmosquitto-nossl
 ```
 
-2、需要有一个MQTT服务器
+2、内网已经部署了MQTT服务器。
 
-3、监控脚本与方法一大部分相同，将最后一步的发送命令修改为
+3、监控脚本与方法一大部分相同，将最后一步的发送命令修改如下：
 
 ```shell
 mosquitto_pub -r -L mqtt://mqtt:mqtt@192.168.XX.XX:1883/openwrtinfo -m "$post_data"
 # mqtt:mqtt前面一个为mqtt用户名：mqtt密码
 ```
 
-​	完整脚本如下：
+​		完整脚本如下：
 
 ```shell
 #!/bin/bash
@@ -259,9 +259,7 @@ mqtt:
 
 ```
 
-5、在
-
-6、通过crontab任务调度或者写一个watch脚本循环调用，即可通过mqtt形式将采集到的信息推送到HA。
+5、通过crontab任务调度或者写一个watch脚本循环调用，即可通过mqtt形式将采集到的信息推送到HA。
 
 ```shell
 #!/bin/bash
