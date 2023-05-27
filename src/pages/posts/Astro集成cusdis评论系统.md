@@ -7,7 +7,7 @@ author: 'ZhJy'
 cover:
     url: ''
     square: ''
-    alt: 'cover'
+    alt: ''
 tags: ["分享","Astro"] 
 theme: 'light'
 featured: true
@@ -25,11 +25,11 @@ keywords: Astro, 留言, 评论!
 
 ### 前言
 
-根据[austin2035/astro-air-blog: A minimalist, beautiful, responsive blogging program written in Astro.一个简约、漂亮并且支持响应式的博客程序，基于 Astro 构建。](https://github.com/austin2035/astro-air-blog)完成本站的搭建，但是没有评论功能总觉得少了点什么，在评价区找到了相关方案，集成Cusdis。
+根据[astro-air-blog](https://github.com/austin2035/astro-air-blog)的模板完成本站的搭建，但是没有评论功能总觉得少了点什么，在评价区找到了相关方案，集成Cusdis评论功能。
 
 ### 注册Cusdis账号
 
-1. 在[Cusdis - Lightweight, privacy-first, open-source comment system](https://cusdis.com/)注册一个账号，可以使用github账号直接登录。
+1. 在[Cusdis](https://cusdis.com/)注册一个账号，也可以使用github账号直接登录。
 2. 添加网站地址
 
 <img src="https://cdn.jsdelivr.net/gh/conscloud/picgotemp/imgplus/202305271626798.png" style="zoom:50%;" />
@@ -40,7 +40,17 @@ keywords: Astro, 留言, 评论!
 
 ### 修改代码
 
-修改`MarkdownPost.astro`代码，在后面加上下列代码：
+1. 下载下面三个文件到/static/js/目录下
+
+```text
+https://cusdis.loongphy.com/js/widget/lang/zh-cn.js
+https://cusdis.loongphy.com/js/cusdis.es.js
+https://cusdis.loongphy.com/js/cusdis-count.umd.js
+```
+
+这三个文件zh-cn.js、cusdis.es.js及cusdis-count.umd.js直接使用的[天真的和伤感的梦想家 (loongphy.com)](https://blog.loongphy.com/)的，再次感谢。
+
+2. 修改`MarkdownPost.astro`代码，在后面加上下列代码：
 
 ~~~js
   <!-- 集成cusdis评论系统 -->
@@ -62,29 +72,28 @@ keywords: Astro, 留言, 评论!
       document.head.appendChild(script);
     </script>
     <!-- 查看评论留言 -->
-    <script defer src="https://cusdis.loongphy.com/js/widget/lang/zh-cn.js"
+    <script defer src="/static/js/zh-cn.js"
     ></script>
-    <script async defer src="https://cusdis.loongphy.com/js/cusdis.es.js"
+    <script async defer src="/static/js/cusdis.es.js"
     ></script>
     <script
       defer
       data-host="https://cusdis.com"
       data-app-id="XXX-XXX-XXX"
-      src="https://cusdis.loongphy.com/js/cusdis-count.umd.js"
+      src="/static/js/cusdis-count.umd.js"
     ></script>
     <!-- 留言功能结束 -->
 ~~~
 
-其中zh-cn.js、cusdis.es.js及cusdis-count.umd.js三个文件直接使用的[天真的和伤感的梦想家 (loongphy.com)](https://blog.loongphy.com/)的
-
-保存提交后，刷新页面就已经出现评论功能了：
+3. 保存提交后，刷新页面就已经出现评论功能了。
 
 <img src="https://cdn.jsdelivr.net/gh/conscloud/picgotemp/imgplus/202305271634898.png" alt="评论功能" style="zoom:50%;" />
 
-提交的评价可以在cusdis的控制台审核、回复、删除：
+4. 评价内容可以在cusdis的控制台进行审核、回复、删除等操作。
 
 <img src="https://cdn.jsdelivr.net/gh/conscloud/picgotemp/imgplus/202305271636107.png" alt="评论操作" style="zoom:50%;" />
 
-审核通过后，可以在文章后面查看：
+5. 在控制台审核通过后，可以在文章后面查看评论记录。
 
 <img src="https://cdn.jsdelivr.net/gh/conscloud/picgotemp/imgplus/202305271639633.png" alt="评论查看" style="zoom:50%;" />
+
