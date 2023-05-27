@@ -28,7 +28,7 @@ keywords: 群晖, DSM, SSH!
 
 我的群晖DSM版本是7.1.1
 
-<img src="https://cdn.jsdelivr.net/gh/conscloud/picgotemp/imgplus/202305270925295.png" alt="image-20230527092511230" style="zoom:50%;" />
+![|inline](https://cdn.jsdelivr.net/gh/conscloud/picgotemp/imgplus/202305270925295.png)
 
 ### 1.开启SSH服务
 
@@ -36,13 +36,13 @@ keywords: 群晖, DSM, SSH!
 
 先使用群晖安装时建立的普通管理员账户（加入了administrators用户组的用户）登录web控制台后，依次点击“控制面板”-“终端机和SNMP”，勾选“启用SSH功能”，再点击右下角的“应用”按钮即完成开启SSH服务。**建议修改默认端口号。**
 
-<img src="https://cdn.jsdelivr.net/gh/conscloud/picgotemp/imgplus/202305270928199.png" alt="image-20230527092800109" style="zoom:67%;" />
+![|inline](https://cdn.jsdelivr.net/gh/conscloud/picgotemp/imgplus/202305270928199.png)
 
 ### 2.允许ROOT账号登录
 
 通过普通管理员账户进行ssh登录，输入sudo - i 回车后再次输入管理员密码，就能切换到root账户。
 
-<img src="https://cdn.jsdelivr.net/gh/conscloud/picgotemp/imgplus/202305270932547.png" alt="image-20230527093234465" style="zoom:50%;" />
+![|inline](https://cdn.jsdelivr.net/gh/conscloud/picgotemp/imgplus/202305270932547.png)
 
 给root账户设置密码,其中xxx为你想要设置的密码。
 

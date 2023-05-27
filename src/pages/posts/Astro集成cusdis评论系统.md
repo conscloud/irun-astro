@@ -21,8 +21,6 @@ meta:
 keywords: Astro, 留言, 评论!
 ---
 
-![](https://cdn.jsdelivr.net/gh/conscloud/picgotemp/imgplus/202305271703819.png)
-
 ### 前言
 
 根据[astro-air-blog](https://github.com/austin2035/astro-air-blog)的模板完成本站的搭建，教程非常详细，具体请参考[Astro Air Blog 详细使用指南 - 驭风笔记 (yufengbiji.com)](https://yufengbiji.com/posts/astro-air-blog-guide)。
@@ -34,11 +32,11 @@ keywords: Astro, 留言, 评论!
 1. 在[Cusdis](https://cusdis.com/)注册一个账号，也可以使用github账号直接登录。
 2. 添加网站地址
 
-<img src="https://cdn.jsdelivr.net/gh/conscloud/picgotemp/imgplus/202305271626798.png" style="zoom:50%;" />
+![|inline](https://cdn.jsdelivr.net/gh/conscloud/picgotemp/imgplus/202305271626798.png)
 
 3. 点击`Embed Code`,复制代码
 
-<img src="https://cdn.jsdelivr.net/gh/conscloud/picgotemp/imgplus/202305271627366.png" style="zoom:50%;" />
+![|inline](https://cdn.jsdelivr.net/gh/conscloud/picgotemp/imgplus/202305271627366.png)
 
 ### 修改代码
 
@@ -89,15 +87,15 @@ https://cusdis.loongphy.com/js/cusdis-count.umd.js
 
 3. 保存提交后，刷新页面就已经出现评论功能了。
 
-<img src="https://cdn.jsdelivr.net/gh/conscloud/picgotemp/imgplus/202305271634898.png" alt="评论功能" style="zoom:50%;" />
+![评论功能|inline](https://cdn.jsdelivr.net/gh/conscloud/picgotemp/imgplus/202305271742229.png)
 
 4. 评价内容可以在cusdis的控制台进行审核、回复、删除等操作。
 
-<img src="https://cdn.jsdelivr.net/gh/conscloud/picgotemp/imgplus/202305271636107.png" alt="评论操作" style="zoom:50%;" />
+![alt 评论审核|inline](https://cdn.jsdelivr.net/gh/conscloud/picgotemp/imgplus/202305271746762.png)
 
 5. 在控制台审核通过后，可以在文章后面查看评论记录。
 
-<img src="https://cdn.jsdelivr.net/gh/conscloud/picgotemp/imgplus/202305271639633.png" alt="评论查看" style="zoom:50%;" />
+![评论查看|inline](https://cdn.jsdelivr.net/gh/conscloud/picgotemp/imgplus/202305271750209.png)
 
 ### 最后感谢
 
