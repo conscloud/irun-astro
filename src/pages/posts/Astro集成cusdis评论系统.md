@@ -25,7 +25,9 @@ keywords: Astro, 留言, 评论!
 
 ### 前言
 
-根据[astro-air-blog](https://github.com/austin2035/astro-air-blog)的模板完成本站的搭建，但是没有评论功能总觉得少了点什么，在评价区找到了相关方案，集成Cusdis评论功能。
+根据[astro-air-blog](https://github.com/austin2035/astro-air-blog)的模板完成本站的搭建，教程非常详细，具体请参考[Astro Air Blog 详细使用指南 - 驭风笔记 (yufengbiji.com)](https://yufengbiji.com/posts/astro-air-blog-guide)。
+
+但是没有评论功能总觉得少了点什么，在评价区找到了相关方案，集成Cusdis评论功能。
 
 ### 注册Cusdis账号
 
