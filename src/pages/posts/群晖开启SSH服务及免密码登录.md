@@ -8,7 +8,7 @@ cover:
     url: 'https://cdn.jsdelivr.net/gh/conscloud/picgotemp/imgplus/202305270954319.png'
     square: 'https://cdn.jsdelivr.net/gh/conscloud/picgotemp/imgplus/202305270954319.png'
     alt: 'cover'
-tags: ["群晖"] 
+tags: ["分享","群晖"] 
 theme: 'light'
 featured: true
 
