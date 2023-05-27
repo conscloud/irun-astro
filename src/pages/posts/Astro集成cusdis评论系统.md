@@ -5,9 +5,9 @@ pubDate: 2023-05-27
 description: '在本站集成cusdis评论系统，支持留言评论'
 author: 'ZhJy'
 cover:
-    url: ''
-    square: ''
-    alt: ''
+    url: 'https://cdn.jsdelivr.net/gh/conscloud/picgotemp/imgplus/202305271703819.png'
+    square: 'https://cdn.jsdelivr.net/gh/conscloud/picgotemp/imgplus/202305271703819.png'
+    alt: 'cover'
 tags: ["分享","Astro"] 
 theme: 'light'
 featured: true
@@ -21,7 +21,7 @@ meta:
 keywords: Astro, 留言, 评论!
 ---
 
-**感谢：**[天真的和伤感的梦想家 (loongphy.com)](https://blog.loongphy.com/)，使用[Loongphy/blog: 个人博客 (github.com)](https://github.com/Loongphy/blog)的源代码。
+![](https://cdn.jsdelivr.net/gh/conscloud/picgotemp/imgplus/202305271703819.png)
 
 ### 前言
 
@@ -97,3 +97,6 @@ https://cusdis.loongphy.com/js/cusdis-count.umd.js
 
 <img src="https://cdn.jsdelivr.net/gh/conscloud/picgotemp/imgplus/202305271639633.png" alt="评论查看" style="zoom:50%;" />
 
+### 最后感谢
+
+感谢[天真的和伤感的梦想家 (loongphy.com)](https://blog.loongphy.com/)，使用了[Loongphy/blog: 个人博客 (github.com)](https://github.com/Loongphy/blog)的源代码。
