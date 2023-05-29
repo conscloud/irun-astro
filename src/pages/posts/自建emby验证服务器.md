@@ -93,15 +93,15 @@ ln -s /volume/XX/XX/emby.conf /etc/nginx/conf.d/emby.conf
 
 到[https://www.gmcert.org/subForm](https://www.gmcert.org/subForm)这个网站申请申请签发证书，参考下面填写：
 
-![](https://cdn.jsdelivr.net/gh/conscloud/picgotemp/imgplus/202305292103557.webp)
+![|inline](https://cdn.jsdelivr.net/gh/conscloud/picgotemp/imgplus/202305292103557.webp)
 
 一个是加密算法选 RSA, 密钥长度至少选 2048, 然后除主题名称为`mb3admin.com`之外其他的按照规则随意填写。点开高级选项：
 
-![](https://cdn.jsdelivr.net/gh/conscloud/picgotemp/imgplus/202305292105504.webp)
+![|inline](https://cdn.jsdelivr.net/gh/conscloud/picgotemp/imgplus/202305292105504.webp)
 
 然后勾选 `自动包含CA证书链` ，最后是证书有效天数，写 `824` 天即可。下载生成的证书，同时也将CA证书下载起来：
 
-![](https://cdn.jsdelivr.net/gh/conscloud/picgotemp/imgplus/202305292126065.webp)
+![|inline](https://cdn.jsdelivr.net/gh/conscloud/picgotemp/imgplus/202305292126065.webp)
 
 将 `mb3admin.com.key.pem` 和 `mb3admin.com.cert.pem`文件上传到第一步配置文件中目录位置，我这里是/volume6/web/mb3admin.com/。
 
@@ -129,7 +129,7 @@ cat xx/mb3admin.com.cert.pem >> /etc/ssl/certs/ca-certificates.crt
 
 可以在本地电脑中修改HOSTS文件，将mb3admin.com指向群晖IP地址，也可以直接在路由器中直接进行域名劫持，将mb3admin.com指向群晖IP
 
-![](https://cdn.jsdelivr.net/gh/conscloud/picgotemp/imgplus/202305292124432.webp)
+![|inline](https://cdn.jsdelivr.net/gh/conscloud/picgotemp/imgplus/202305292124432.webp)
 
 ### 6.浏览器添加CA证书
 
@@ -137,9 +137,9 @@ cat xx/mb3admin.com.cert.pem >> /etc/ssl/certs/ca-certificates.crt
 
 将GMCert_RSACA01.cert.pem 文件名改为GMCert_RSACA01.cer，双击安装
 
-![](https://cdn.jsdelivr.net/gh/conscloud/picgotemp/imgplus/202305292131273.webp)
+![|inline](https://cdn.jsdelivr.net/gh/conscloud/picgotemp/imgplus/202305292131273.webp)
 
-![](https://cdn.jsdelivr.net/gh/conscloud/picgotemp/imgplus/202305292132905.webp)
+![|inline](https://cdn.jsdelivr.net/gh/conscloud/picgotemp/imgplus/202305292132905.webp)
 
 然后在浏览器中打开下面两个浏览器，验证是否成功：
 
@@ -147,13 +147,13 @@ cat xx/mb3admin.com.cert.pem >> /etc/ssl/certs/ca-certificates.crt
 
 [https://mb3admin.com/admin/service/registration/validateDevice/666](https://mb3admin.com/admin/service/registration/validateDevice/666)
 
-![](https://cdn.jsdelivr.net/gh/conscloud/picgotemp/imgplus/202305292133083.webp)
+![|inline](https://cdn.jsdelivr.net/gh/conscloud/picgotemp/imgplus/202305292133083.webp)
 
 ### 7.在Emby服务器中输入秘钥
 
 管理Emby Server-Emby Premiere中随便输入一个秘钥，见证奇迹：
 
-![](https://cdn.jsdelivr.net/gh/conscloud/picgotemp/imgplus/202305292136890.webp)
+![|inline](https://cdn.jsdelivr.net/gh/conscloud/picgotemp/imgplus/202305292136890.webp)
 
 
 
